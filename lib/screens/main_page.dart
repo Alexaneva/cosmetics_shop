@@ -35,15 +35,15 @@ class _MainPageState extends State<MainPage> {
         },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Главная'),
-          BottomNavigationBarItem(icon: Icon(Icons.list), label: 'Каталог'),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Каталог'),
           BottomNavigationBarItem(
               icon: Icon(Icons.shopping_cart), label: 'Корзина'),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Профиль'),
         ],
-        selectedLabelStyle: const TextStyle(color: Colors.black87),
-        unselectedLabelStyle: const TextStyle(color: Colors.black87),
-        selectedItemColor: Colors.black87,
-        unselectedItemColor: Colors.black87,
+        selectedLabelStyle:  TextStyle(color: Colors.grey[900]),
+        unselectedLabelStyle:  TextStyle(color: Colors.grey[500]),
+        selectedItemColor: Colors.grey[900],
+        unselectedItemColor: Colors.grey[500],
       ),
     );
   }

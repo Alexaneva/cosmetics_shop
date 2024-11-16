@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../models/product.dart';
+import 'package:cosmetics_shop/screens/catalog_page/filter_page.dart';
 
 class ProductPage extends StatefulWidget {
   final String skinType;
@@ -75,7 +76,14 @@ class _ProductPageState extends State<ProductPage> {
                 Text('${products.length} продуктов',
                     style: const TextStyle(fontSize: 18)),
                 const SizedBox(width: 50),
-                IconButton(icon: const Icon(Icons.tune), onPressed: () {}),
+                IconButton(
+                    icon: const Icon(Icons.tune),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => FilterPage()));
+                    }),
               ],
             ),
           ),
