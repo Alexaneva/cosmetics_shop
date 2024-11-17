@@ -1,4 +1,4 @@
 # cosmetics_shop
 
-https://github.com/user-attachments/assets/cc1829b7-1bbc-418b-b4bd-05fe39773f7a
+https://github.com/user-attachments/assets/b7fe5d74-6967-4c40-9805-333eeb5f459e
 
