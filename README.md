@@ -1,3 +1,4 @@
 # cosmetics_shop
 
-[Смотреть видео](https://github.com/Alexaneva/cosmetics_shop/blob/main/assets/cosmetics.mp4)
+https://github.com/user-attachments/assets/cc1829b7-1bbc-418b-b4bd-05fe39773f7a
+
