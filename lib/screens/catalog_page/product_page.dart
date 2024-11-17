@@ -6,7 +6,7 @@ import 'package:cosmetics_shop/screens/catalog_page/filter_page.dart';
 class ProductPage extends StatefulWidget {
   final String skinType;
 
-  ProductPage(this.skinType, {super.key});
+  const ProductPage(this.skinType, {super.key});
 
   @override
   State<ProductPage> createState() => _ProductPageState();
@@ -82,7 +82,7 @@ class _ProductPageState extends State<ProductPage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => FilterPage()));
+                              builder: (context) => const FilterPage()));
                     }),
               ],
             ),

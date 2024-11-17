@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class FilterPage extends StatelessWidget {
+  const FilterPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Фильтры'),
+        title: const Text('Фильтры'),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -23,38 +25,38 @@ class FilterPage extends StatelessWidget {
               value: 'По популярности',
               onPressed: () {},
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             FilterOption(
               title: 'Тип кожи',
               value: 'Жирная',
               onPressed: () {},
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             FilterOption(
               title: 'Тип средства',
               value: 'Все',
               onPressed: () {},
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             FilterOption(
               title: 'Проблема кожи',
               value: 'Не выбрано',
               onPressed: () {},
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             FilterOption(
               title: 'Эффект средства',
               value: 'Увлажнение',
               onPressed: () {},
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             FilterOption(
               title: 'Линия косметики',
               value: 'Все',
               onPressed: () {},
             ),
-            Spacer(),
-            Container(
+            const Spacer(),
+            SizedBox(
                 width: 500,
                 height: 55,
                 child: ElevatedButton(
@@ -84,11 +86,11 @@ class FilterOption extends StatelessWidget {
   final VoidCallback onPressed;
 
   const FilterOption({
-    Key? key,
+    super.key,
     required this.title,
     required this.value,
     required this.onPressed,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -99,12 +101,12 @@ class FilterOption extends StatelessWidget {
         children: [
           Text(
             title,
-            style: TextStyle(color: Colors.black, fontSize: 16),
+            style: const TextStyle(color: Colors.black, fontSize: 16),
           ),
-          SizedBox(width: 20),
+          const SizedBox(width: 20),
           Text(
             value,
-            style: TextStyle(color: Colors.grey, fontSize: 16),
+            style: const TextStyle(color: Colors.grey, fontSize: 16),
           ),
         ],
       ),
